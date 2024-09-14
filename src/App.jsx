@@ -20,6 +20,11 @@ const App = () => {
         </div>
       </div>
     </BrowserRouter>
+<<<<<<< HEAD
+=======
+
+  )
+>>>>>>> 474645a5bfd1d51bd0ff41f8a840ee5ebcb044c5
 
   )
 }
