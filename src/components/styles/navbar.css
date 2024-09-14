@@ -1,0 +1,56 @@
+/* Links common styles */
+.links, .links1 {
+  position: relative;
+  color: #22e000;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Links active state */
+.links.active, .links1.active {
+  color: red;
+}
+
+/* Hover effect for desktop links */
+.links::after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  background: #4bdeff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+}
+
+/* Hover effect for mobile dropdown links */
+.links1::after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  background: #4bdeff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out;
+  width: 30%;
+}
+
+/* Hover interactions */
+.links:hover, .links1:hover {
+  color: #4bdeff;
+}
+
+.links:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.links1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
