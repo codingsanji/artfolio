@@ -1,5 +1,6 @@
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
 @tailwind utilities;
 
 * {
@@ -10,3 +11,6 @@
     scroll-behavior: smooth;
     color-scheme: dark;
   }
+=======
+@tailwind utilities;
+>>>>>>> 79589a5fef73cd4a3e558dc47e745275e2da38e5
