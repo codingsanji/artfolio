@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+<<<<<<< HEAD
 module.exports = {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
@@ -33,3 +34,13 @@ module.exports = {
   },
   plugins: [],
 };
+=======
+export default {
+  content: [],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+>>>>>>> 79589a5fef73cd4a3e558dc47e745275e2da38e5
