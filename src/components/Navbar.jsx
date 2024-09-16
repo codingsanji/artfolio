@@ -38,18 +38,10 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 flex items-center h-20 px-8 bg-[#0b022e] shadow-md">
       <div className="flex-shrink-0 text-xl space-x-4">
->>>>>>>>> Temporary merge branch 2
-        <Link to="/" onClick={() => {
-          window.scrollTo(0, 0);
-        }}>
+        <Link to="/" onClick={() => { window.scrollTo(0, 0); }}>
           <p>Deydeepya | Portfolio</p>
         </Link>
       </div>
-
-<<<<<<<<< Temporary merge branch 1
-      <div className="flex-grow hidden lg:flex lg:justify-center lg:items-center">
-        <ul className="flex text-[#22e000] text-2xl space-x-4">
-=========
       <div className="flex-grow hidden lg:flex lg:justify-end lg:items-end">
         <ul className="flex text-[#22e000] text-xl space-x-4">
           <li className='links p-4'>
@@ -63,13 +55,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-
-<<<<<<<<< Temporary merge branch 1
-      <button onClick={toggleMenu} className="lg:hidden text-white menu-icon">
-=========
       <button onClick={toggleMenu} className="lg:hidden text-white menu-icon ml-auto">
->>>>>>>>> Temporary merge branch 2
-          <IoMenu size={40} />
+        <IoMenu size={40} />
       </button>
       {isOpen && (
         <div ref={dropdownRef} className="lg:hidden absolute top-20 left-0 right-0 bg-[#0b022e] text-[#22e000] text-xl space-y-4 z-50">
