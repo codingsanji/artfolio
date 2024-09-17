@@ -27,19 +27,13 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
-<<<<<<< HEAD
     "autoprefixer": "^10.4.20",
-=======
->>>>>>> 79589a5fef73cd4a3e558dc47e745275e2da38e5
     "eslint": "^9.9.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",
-<<<<<<< HEAD
     "postcss": "^8.4.47",
-=======
->>>>>>> 79589a5fef73cd4a3e558dc47e745275e2da38e5
     "tailwindcss": "^3.4.11",
     "vite": "^5.4.1"
   }

@@ -1,29 +1,35 @@
+import React, { useRef } from 'react';
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 
 const App = () => {
+  // Create refs for each section
+  const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
-<<<<<<< HEAD
-        <div>
-=======
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
->>>>>>> 79589a5fef73cd4a3e558dc47e745275e2da38e5
-          <Navbar />
+          <Navbar aboutRef={aboutRef} projectsRef={projectsRef} contactRef={contactRef} />
           <Hero />
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <div className='relative z-0'>
+        <div ref={aboutRef}>
+          <About />
+        </div>
+        <div ref={projectsRef}>
+          <Experience />
+          <Tech />
+          <Works />
+        </div>
+        <div className='relative z-0' ref={contactRef}>
           <Contact />
           <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
   );
-}
+};
 
-export default App
+export default App;
